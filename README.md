@@ -1,6 +1,11 @@
 # k8s-docker
+
+##Based on the Istio documentation
+
+
 Istio, monitoring and ingress on docker-mac with Kubernetes
 
+for the simple path execute the script init.sh in this repo.
 
  This note will document the steps and scripts needed to install istio on kubernetes
  including installing the kubernetes dashboard on docker-kubernetes.
