@@ -1,102 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9a9e92fb-0f3c-4611-ade9-8fb2da9fca29" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/go.imports.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/bin/istioctl" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/init-istio-k8s-dashboard.sh" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/istio/README.md" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/istio/addons/grafana.yaml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/istio/addons/prometheus.yaml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/istio/addons/servicegraph.yaml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/istio/addons/zipkin-to-stackdriver.yaml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/istio/addons/zipkin.yaml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/istio/helm/README.md" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/istio/helm/helm-service-account.yaml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/istio/helm/istio/Chart.yaml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/istio/helm/istio/charts/grafana/Chart.yaml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/istio/helm/istio/charts/grafana/templates/deployment.yaml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/istio/helm/istio/charts/grafana/templates/ingress.yaml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/istio/helm/istio/charts/grafana/templates/service.yaml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/istio/helm/istio/charts/ingress/Chart.yaml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/istio/helm/istio/charts/ingress/templates/clusterrole.yaml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/istio/helm/istio/charts/ingress/templates/clusterrolebinding.yaml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/istio/helm/istio/charts/ingress/templates/deployment.yaml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/istio/helm/istio/charts/ingress/templates/service.yaml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/istio/helm/istio/charts/ingress/templates/serviceaccount.yaml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/istio/helm/istio/charts/mixer/Chart.yaml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/istio/helm/istio/charts/mixer/templates/clusterrole.yaml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/istio/helm/istio/charts/mixer/templates/clusterrolebinding.yaml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/istio/helm/istio/charts/mixer/templates/config.yaml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/istio/helm/istio/charts/mixer/templates/configmap.yaml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/istio/helm/istio/charts/mixer/templates/crds.yaml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/istio/helm/istio/charts/mixer/templates/create-custom-resources-job.yaml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/istio/helm/istio/charts/mixer/templates/deployment.yaml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/istio/helm/istio/charts/mixer/templates/service.yaml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/istio/helm/istio/charts/mixer/templates/serviceaccount.yaml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/istio/helm/istio/charts/pilot/Chart.yaml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/istio/helm/istio/charts/pilot/templates/clusterrole.yaml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/istio/helm/istio/charts/pilot/templates/clusterrolebinding.yaml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/istio/helm/istio/charts/pilot/templates/crds.yaml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/istio/helm/istio/charts/pilot/templates/deployment.yaml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/istio/helm/istio/charts/pilot/templates/service.yaml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/istio/helm/istio/charts/pilot/templates/serviceaccount.yaml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/istio/helm/istio/charts/prometheus/Chart.yaml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/istio/helm/istio/charts/prometheus/templates/configmap.yaml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/istio/helm/istio/charts/prometheus/templates/deployment.yaml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/istio/helm/istio/charts/prometheus/templates/ingress.yaml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/istio/helm/istio/charts/prometheus/templates/service.yaml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/istio/helm/istio/charts/security/Chart.yaml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/istio/helm/istio/charts/security/templates/clusterrole.yaml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/istio/helm/istio/charts/security/templates/clusterrolebinding.yaml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/istio/helm/istio/charts/security/templates/deployment.yaml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/istio/helm/istio/charts/security/templates/serviceaccount.yaml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/istio/helm/istio/charts/servicegraph/Chart.yaml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/istio/helm/istio/charts/servicegraph/templates/deployment.yaml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/istio/helm/istio/charts/servicegraph/templates/ingress.yaml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/istio/helm/istio/charts/servicegraph/templates/service.yaml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/istio/helm/istio/charts/sidecar-injector/Chart.yaml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/istio/helm/istio/charts/sidecar-injector/templates/configmap.yaml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/istio/helm/istio/charts/sidecar-injector/templates/deployment.yaml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/istio/helm/istio/charts/sidecar-injector/templates/mutatingwebhook.yaml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/istio/helm/istio/charts/sidecar-injector/templates/service.yaml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/istio/helm/istio/charts/zipkin/Chart.yaml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/istio/helm/istio/charts/zipkin/templates/deployment.yaml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/istio/helm/istio/charts/zipkin/templates/ingress.yaml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/istio/helm/istio/charts/zipkin/templates/service.yaml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/istio/helm/istio/requirements.yaml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/istio/helm/istio/templates/configmap.yaml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/istio/helm/istio/values.yaml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/istio/istio-auth.yaml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/istio/istio-ca-plugin-certs.yaml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/istio/istio-ca-with-health-check.yaml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/istio/istio-one-namespace-auth.yaml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/istio/istio-one-namespace.yaml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/istio/istio-sidecar-injector-configmap-debug.yaml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/istio/istio-sidecar-injector-configmap-release.yaml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/istio/istio-sidecar-injector.yaml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/istio/istio.yaml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/istio/mesh-expansion.yaml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/istio/webhook-create-signed-cert.sh" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/istio/webhook-patch-ca-bundle.sh" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/kubernetes-dashboard/ReadMe.md" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/kubernetes-dashboard/kubernetes-dashboard.yaml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/kubernetes-dashboard/showDashboad.sh" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/load-dashboards.sh" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/samples/README.md" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/samples/helloworld/README.md" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/samples/helloworld/helloworld.yaml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/samples/httpbin/README.md" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/samples/httpbin/destinationpolicies/httpbin-circuit-breaker.yaml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/samples/httpbin/httpbin.yaml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/samples/httpbin/routerules/httpbin-v1.yaml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/samples/httpbin/sample-client/fortio-deploy.yaml" />
-      <change beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
-    </list>
+    <list default="true" id="9a9e92fb-0f3c-4611-ade9-8fb2da9fca29" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -114,7 +19,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="init-istio-k8s-dashboard.sh" pinned="false" current-in-tab="true">
+      <file leaf-file-name="init-istio-k8s-dashboard.sh" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/init-istio-k8s-dashboard.sh">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="390">
@@ -147,7 +52,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="load-dashboards.sh" pinned="false" current-in-tab="false">
+      <file leaf-file-name="load-dashboards.sh" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/load-dashboards.sh">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="330">
@@ -430,12 +335,12 @@
       <option name="presentableId" value="Default" />
       <updated>1520704770279</updated>
       <workItem from="1520704771604" duration="1482000" />
-      <workItem from="1520707725243" duration="2359000" />
+      <workItem from="1520707725243" duration="3913000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3841000" />
+    <option name="totallyTimeSpent" value="5395000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="2150" y="-72" width="1823" height="1139" extended-state="0" />
@@ -453,7 +358,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24985963" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24985963" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Problems" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -526,14 +431,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/load-dashboards.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="22" column="0" lean-forward="true" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/kubernetes-dashboard/showDashboad.sh">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
@@ -546,6 +443,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="390">
           <caret line="26" column="0" lean-forward="true" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/load-dashboards.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="22" column="0" lean-forward="true" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
           <folding />
         </state>
       </provider>

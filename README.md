@@ -76,3 +76,30 @@ open http://localhost:8088/dotviz
 
  kubernetes..
  from the kube internet...?
+
+--more stuff
+
+./bin/istioctl kube-inject -f samples/httpbin/httpbin.yaml| kubectl create -f -
+
+cat <<EOF | kubectl create -f -
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: simple-ingress
+  annotations:
+    kubernetes.io/ingress.class: istio
+spec:
+  rules:
+  - http:
+      paths:
+      - path: /status/.*
+        backend:
+          serviceName: httpbin
+          servicePort: 8000
+      - path: /delay/.*
+        backend:
+          serviceName: httpbin
+          servicePort: 8000
+EOF
+
+
