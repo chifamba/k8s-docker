@@ -1,0 +1,29 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: vault
+spec:
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: vault
+        version: v1
+    spec:
+      containers:
+      - name: vault
+        image: vault:0.9.5
+        imagePullPolicy: IfNotPresent
+        ports:
+        - containerPort: 8200
+        command:
+         - vault 
+         - server 
+         - -config=/vault/config/config.json
+        volumeMounts:
+        - name: vault-config-volume
+          mountPath: /vault/config
+      volumes:
+        - name: vault-config-volume
+          configMap:
+            name: vault-config
