@@ -5,7 +5,7 @@ metadata:
   name: mongo
   labels:
     app: mongo
-    etcd_node: mongo
+    mongo_node: mongo
 spec:
   containers:
   - name: mongo
@@ -36,5 +36,5 @@ spec:
     port: 27017
     protocol: TCP
   selector:
-    moongo_node: mongo
+    mongo_node: mongo
 
