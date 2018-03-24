@@ -14,42 +14,39 @@ spec:
     app: etcd
 
 ---
-
 apiVersion: v1
 kind: Pod
 metadata:
+  name: etcd0
   labels:
     app: etcd
     etcd_node: etcd0
-  name: etcd0
 spec:
   containers:
-  - command:
-    - /usr/local/bin/etcd
-    - --name
-    - etcd0
-    - --initial-advertise-peer-urls
-    - http://etcd0:2380
-    - --listen-peer-urls
-    - http://0.0.0.0:2380
-    - --listen-client-urls
-    - http://0.0.0.0:2379
-    - --advertise-client-urls
-    - http://etcd0:2379
-    - --initial-cluster
-    - etcd0=http://etcd0:2380,etcd1=http://etcd1:2380,etcd2=http://etcd2:2380
-    - --initial-cluster-state
-    - new
+  - name: etcd0
     image: quay.io/coreos/etcd:v3.3.1
-    name: etcd0
+    imagePullPolicy: IfNotPresent
     ports:
     - containerPort: 2379
       name: client
-      protocol: TCP
     - containerPort: 2380
       name: server
-      protocol: TCP
-  restartPolicy: Never
+    command:
+     - /usr/local/bin/etcd 
+     - --config-file
+     - /data/config/etcd.conf.yml
+    volumeMounts:
+    - name: etcd0-config-volume
+      mountPath: /data/config
+    - name: etcd0-data-volume
+      mountPath: /etcd/storage
+  volumes:
+    - name: etcd0-config-volume
+      configMap:
+        name: etcd0-config
+    - name: etcd0-data-volume
+      persistentVolumeClaim:
+        claimName: etcd0-pv-claim
 
 ---
 
@@ -77,38 +74,36 @@ spec:
 apiVersion: v1
 kind: Pod
 metadata:
+  name: etcd1
   labels:
     app: etcd
     etcd_node: etcd1
-  name: etcd1
 spec:
   containers:
-  - command:
-    - /usr/local/bin/etcd
-    - --name
-    - etcd1
-    - --initial-advertise-peer-urls
-    - http://etcd1:2380
-    - --listen-peer-urls
-    - http://0.0.0.0:2380
-    - --listen-client-urls
-    - http://0.0.0.0:2379
-    - --advertise-client-urls
-    - http://etcd1:2379
-    - --initial-cluster
-    - etcd0=http://etcd0:2380,etcd1=http://etcd1:2380,etcd2=http://etcd2:2380
-    - --initial-cluster-state
-    - new
+  - name: etcd1
     image: quay.io/coreos/etcd:v3.3.1
-    name: etcd1
+    imagePullPolicy: IfNotPresent
     ports:
     - containerPort: 2379
       name: client
-      protocol: TCP
     - containerPort: 2380
       name: server
-      protocol: TCP
-  restartPolicy: Never
+    command:
+     - /usr/local/bin/etcd 
+     - --config-file
+     - /data/config/etcd.conf.yml
+    volumeMounts:
+    - name: etcd1-config-volume
+      mountPath: /data/config
+    - name: etcd1-data-volume
+      mountPath: /etcd/storage
+  volumes:
+    - name: etcd1-config-volume
+      configMap:
+        name: etcd1-config
+    - name: etcd1-data-volume
+      persistentVolumeClaim:
+        claimName: etcd1-pv-claim
 
 ---
 
@@ -136,38 +131,36 @@ spec:
 apiVersion: v1
 kind: Pod
 metadata:
+  name: etcd2
   labels:
     app: etcd
     etcd_node: etcd2
-  name: etcd2
 spec:
   containers:
-  - command:
-    - /usr/local/bin/etcd
-    - --name
-    - etcd2
-    - --initial-advertise-peer-urls
-    - http://etcd2:2380
-    - --listen-peer-urls
-    - http://0.0.0.0:2380
-    - --listen-client-urls
-    - http://0.0.0.0:2379
-    - --advertise-client-urls
-    - http://etcd2:2379
-    - --initial-cluster
-    - etcd0=http://etcd0:2380,etcd1=http://etcd1:2380,etcd2=http://etcd2:2380
-    - --initial-cluster-state
-    - new
+  - name: etcd2
     image: quay.io/coreos/etcd:v3.3.1
-    name: etcd2
+    imagePullPolicy: IfNotPresent
     ports:
     - containerPort: 2379
       name: client
-      protocol: TCP
     - containerPort: 2380
       name: server
-      protocol: TCP
-  restartPolicy: Never
+    command:
+     - /usr/local/bin/etcd 
+     - --config-file
+     - /data/config/etcd.conf.yml
+    volumeMounts:
+    - name: etcd2-config-volume
+      mountPath: /data/config
+    - name: etcd2-data-volume
+      mountPath: /etcd/storage
+  volumes:
+    - name: etcd2-config-volume
+      configMap:
+        name: etcd2-config
+    - name: etcd2-data-volume
+      persistentVolumeClaim:
+        claimName: etcd2-pv-claim
 
 ---
 

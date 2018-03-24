@@ -1,0 +1,50 @@
+kind: PersistentVolume
+apiVersion: v1
+metadata:
+  name: etcd0-pv-volume
+  labels:
+    type: local
+spec:
+  storageClassName: manual
+  capacity:
+    storage: 1Gi
+  accessModes:
+    - ReadWriteOnce
+  hostPath:
+    path: "/data/k8-storage/etcd0-data"
+
+---
+
+kind: PersistentVolume
+apiVersion: v1
+metadata:
+  name: etcd1-pv-volume
+  labels:
+    type: local
+spec:
+  storageClassName: manual
+  capacity:
+    storage: 1Gi
+  accessModes:
+    - ReadWriteOnce
+  hostPath:
+    path: "/data/k8-storage/etcd1-data"
+
+---
+
+kind: PersistentVolume
+apiVersion: v1
+metadata:
+  name: etcd2-pv-volume
+  labels:
+    type: local
+spec:
+  storageClassName: manual
+  capacity:
+    storage: 1Gi
+  accessModes:
+    - ReadWriteOnce
+  hostPath:
+    path: "/data/k8-storage/etcd2-data"
+
+---
