@@ -1,0 +1,20 @@
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: tweetscraper
+  labels:
+    app: tweetscraper
+spec:
+  containers:
+  - name: tweetscraper
+    image: chifamba/tweetscraper:0.5.2
+    imagePullPolicy: IfNotPresent
+    livenessProbe:
+      httpGet:
+        path: /healthCheck
+        port: 8080
+        scheme: HTTPS
+      initialDelaySeconds: 60
+      periodSeconds: 10
+
